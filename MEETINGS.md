@@ -13,18 +13,20 @@ topics and future work.
 | Time | 20:00 to 21:00 Asia/Shanghai (UTC+8) |
 | Upcoming meetings | [Higress meetings on the LFX platform](https://zoom-lfx.platform.linuxfoundation.org/meetings/higress) |
 | Join via Zoom | [Higress Community Meeting page](https://zoom-lfx.platform.linuxfoundation.org/meeting/94551670181?password=6b1f20d7-7b52-4a32-86fe-5a32de2ee879) |
-| DingTalk calendar | [September 17, 2026](https://n.dingtalk.com/dingding/calendar/detail/index.html?dd_full_screen=true&dd_progress=false&dd_darkmode=true&dd_android_full=true&uniqueId=cklhN1hyM1VLYnVjYlg3ZG5yU3J5dz09&recurrenceId=1789646400000&corpId=dingd8e1123006514592&inviterId=RWlWYkUwK1ZUakZHclB0VlBHUHJpZz09) |
+| DingTalk calendar | Scan the poster or QR code below with DingTalk to add the meeting to your calendar |
 
-[![DingTalk calendar for the September 17, 2026 meeting](./images/higress-community-meeting-2026-09-17.jpg)](https://n.dingtalk.com/dingding/calendar/detail/index.html?dd_full_screen=true&dd_progress=false&dd_darkmode=true&dd_android_full=true&uniqueId=cklhN1hyM1VLYnVjYlg3ZG5yU3J5dz09&recurrenceId=1789646400000&corpId=dingd8e1123006514592&inviterId=RWlWYkUwK1ZUakZHclB0VlBHUHJpZz09)
+The meeting runs on Zoom and DingTalk at the same time. Join through whichever
+platform is more convenient for you.
+
+![DingTalk calendar for the September 17, 2026 meeting](./images/higress-community-meeting-2026-09-17.jpg)
 
 This is a recurring monthly meeting. The LFX calendar lists upcoming dates and
 any schedule changes. Select a meeting on the calendar to join via Zoom. No
 project invitation is required, and participants may join up to 10 minutes
 before the scheduled start.
 
-DingTalk calendar links are specific to each occurrence in the recurring
-series, so the link is updated for each meeting. The current link is also
-posted in the corresponding agenda issue before the meeting.
+The DingTalk poster is updated for each meeting and is also posted in the
+corresponding agenda issue before the meeting.
 
 ## Agenda and participation
 
