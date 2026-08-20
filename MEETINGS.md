@@ -1,24 +1,32 @@
 # Higress Community Meetings
 
-Higress community meetings are public and open to users, contributors, and
-anyone interested in the project. Meetings are used for project updates,
-technical discussions, roadmap planning, and community questions.
+Higress community meetings are open to users, contributors, and anyone
+interested in the project. We share project updates and discuss technical
+topics and future work.
 
 ## Schedule and joining
 
 | Item | Details |
 | --- | --- |
 | Meeting | Higress Community Meeting |
-| Schedule | Third Thursday of every month |
-| Time | 20:00–21:00 Asia/Shanghai (UTC+8) |
-| First meeting | 2026-08-20 |
-| Public calendar | [Higress meetings on the LFX platform](https://zoom-lfx.platform.linuxfoundation.org/meetings/higress) |
-| Join or register | [Higress Community Meeting page](https://zoom-lfx.platform.linuxfoundation.org/meeting/94551670181?password=6b1f20d7-7b52-4a32-86fe-5a32de2ee879) |
+| Schedule | Monthly, on the third Thursday |
+| Time | 20:00 to 21:00 Asia/Shanghai (UTC+8) |
+| Upcoming meetings | [Higress meetings on the LFX platform](https://zoom-lfx.platform.linuxfoundation.org/meetings/higress) |
+| Join via Zoom | [Higress Community Meeting page](https://zoom-lfx.platform.linuxfoundation.org/meeting/94551670181?password=6b1f20d7-7b52-4a32-86fe-5a32de2ee879) |
+| DingTalk calendar | Scan the poster or QR code below with DingTalk to add the meeting to your calendar |
 
-The calendar is the authoritative source for individual meeting dates and any
-schedule changes. Select an occurrence on the calendar and use its meeting
-page to join. No project invitation is required, and participants may join up
-to 10 minutes before the scheduled start.
+The meeting runs on Zoom and DingTalk at the same time. Join through whichever
+platform is more convenient for you.
+
+![DingTalk calendar for the September 17, 2026 meeting](./images/higress-community-meeting-2026-09-17.jpg)
+
+This is a recurring monthly meeting. The LFX calendar lists upcoming dates and
+any schedule changes. Select a meeting on the calendar to join via Zoom. No
+project invitation is required, and participants may join up to 10 minutes
+before the scheduled start.
+
+The DingTalk poster is updated for each meeting and is also posted in the
+corresponding agenda issue before the meeting.
 
 ## Agenda and participation
 
