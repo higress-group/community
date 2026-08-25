@@ -15,3 +15,7 @@ Meeting records are organized as `YYYY/YYYY-MM-DD.md` and contain:
 Use [`meeting-notes-template.md`](./meeting-notes-template.md) when adding a
 record. Significant technical or governance decisions must also be recorded in
 the relevant public issue or pull request.
+
+## Meeting records
+
+- [August 20, 2026](./2026/2026-08-20.md)
