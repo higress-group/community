@@ -51,10 +51,16 @@ security policy, and proxies requests and responses.
 
 ### Background
 
-Higress combines the Envoy data plane and Istio-derived control plane with
-Ingress/Gateway API translation and an extensible plugin ecosystem. The
-control plane watches configuration and discovery sources and generates xDS;
-the data plane accepts untrusted network traffic and applies that configuration.
+Higress runs a gateway that accepts requests from clients and forwards them to
+configured backend services or AI model providers. Operators define routes,
+access policies, certificates, services, and plugins through Kubernetes or
+supported service registries. The Higress controller reads those settings and
+sends the resulting gateway configuration to Envoy, which applies the required
+authentication, authorization, traffic changes, and routing. Because Higress
+sits between external clients and backend systems, it processes untrusted
+requests and may handle sensitive headers, request bodies, AI prompts,
+responses, and TLS credentials. Installed plugins and external integrations
+extend this request path and therefore become part of its security boundary.
 
 ### Architecture and Data Flow
 
@@ -158,10 +164,10 @@ adjust it for their tenancy model and data classification.
 | HG-TM-04 | High | Control-plane or xDS/SDS channel compromise injects malicious configuration or secret material, or prevents updates. | Envoy validates delivered resources and can retain the last accepted configuration. During a control-plane partition, policy removal or tightening cannot propagate, so stale permissive configuration may remain active until connectivity is restored. Operators must protect control-plane identities, endpoints, network paths, and Kubernetes access; transport and deployment assumptions require a dedicated hardening guide. |
 | HG-TM-05 | High | Hostile downstream traffic exploits an Envoy/filter parser defect or exhausts connections, memory, CPU, sockets, or upstream capacity. | Envoy validation, resource limits, timeouts, rate-limit/circuit-breaker features, probes, and multiple replicas can limit impact. Safe values are deployment-specific and timely Envoy/Higress patching remains essential. |
 | HG-TM-06 | High | A tenant accidentally or deliberately attaches a route or policy to another tenant's gateway and exposes or disrupts traffic. | Kubernetes RBAC and admission policy control who may create or change resources. Higress's Gateway API translation enforces a listener's `allowedRoutes.namespaces` for Route-to-Gateway attachment and separately checks `ReferenceGrant` for cross-namespace backend and Secret references. A Route from a namespace not selected by `allowedRoutes` does not attach, and a cross-namespace reference without a matching `ReferenceGrant` is rejected. Higress does not make a hostile multi-tenant cluster safe when administrators grant overlapping write privileges. |
-| HG-TM-07 | High | Requests, AI prompts, credentials, or responses are disclosed to an external registry, plugin, observability backend, identity service, or model provider. | Integrations require operator configuration and can be restricted through credentials and network policy. Operators remain responsible for egress allowlists, provider contracts, log redaction, residency, and data-retention controls. |
+| HG-TM-07 | High | Request bodies, credentials, or responses are disclosed to a configured plugin, observability backend, identity service, or external provider. When Higress is used as an AI gateway, request bodies can include AI prompts and responses can contain model output. | Integrations require operator configuration and can be restricted through credentials and network policy. Operators remain responsible for egress allowlists, provider contracts, log redaction, residency, and data-retention controls. |
 | HG-TM-08 | Medium | Logs, metrics, traces, admin/debug endpoints, or configuration dumps expose credentials or sensitive request metadata. | Admin interfaces are not intended as public endpoints and telemetry is configurable. Access control, redaction, retention, and exposure are deployment responsibilities; unsafe logging or endpoint exposure remains possible. |
 | HG-TM-09 | High | Certificate expiration, issuer compromise, or unauthorized Secret replacement causes outage or impersonation. | SDS and automatic HTTPS support dynamic certificate updates and renewal. Operators must secure issuers, monitor expiry/renewal, test emergency rotation, and control Secret writers. |
-| HG-TM-10 | High | A source-control, dependency, GitHub Actions, registry, or maintainer-account compromise produces malicious release artifacts. | Public review, CI tests, license checks, CodeQL, pinned dependency/submodule inputs, and GitHub release workflows provide layers. Missing universal immutable action pinning, release SBOMs, signatures, provenance, and documented repository access controls leave material residual risk. |
+| HG-TM-10 | High | A source-control, dependency, GitHub Actions, registry, or maintainer-account compromise produces malicious release artifacts. | Public review, CI tests, license checks, CodeQL, pinned dependency/submodule inputs, and GitHub release workflows provide layers. Missing universal immutable action pinning, project-wide release SBOM, artifact-signature, and machine-readable provenance-attestation guarantees, and documented repository access controls leave material residual risk. |
 
 The model should be reviewed after material architecture, privilege, plugin,
 release-pipeline, or trust-boundary changes. The project does not yet enforce a
@@ -184,18 +190,21 @@ weekly schedule; the project also enforces a scoped Go vet warning gate. A
 `golangci-lint` target remains in the repository, but current CI does not invoke
 it, so it provides no active CI control.
 Release tags trigger image and CLI/CRD artifact builds. Dependency inputs are
-versioned, but release artifacts do not currently have a project-generated
-SBOM, signature, or SLSA provenance. Not all workflow actions are pinned to
-immutable commits. The public repository does not prove a required reviewer
-count, signed-commit requirement, organization-wide 2FA, or branch-protection
-configuration; those controls require separate repository-settings evidence.
+versioned, but the project does not yet provide SBOMs, artifact signatures, or
+signed provenance attestations consistently across all release artifacts. Not
+all workflow actions are pinned to immutable commits. The public repository
+does not prove a required reviewer count, signed-commit requirement,
+organization-wide 2FA, or branch-protection configuration; those controls
+require separate repository-settings evidence.
 
 Ordinary project-team communication uses GitHub issues, pull requests,
 discussions, localized community channels, and Discord. Inbound users use the
-same public channels. Every vulnerability report must be submitted to both
-GitHub Private Security Advisories and the Alibaba Security Response Center,
-as documented in `SECURITY.md`. The Security Response Team correlates
-the two private records.
+same public channels. GitHub Private Security Advisories are the required,
+vendor-neutral, and authoritative private vulnerability intake documented in
+`SECURITY.md`. Reporters may also use the Alibaba Security Response Center as
+an optional additional channel. An SRT member with ASRC access may correlate an
+ASRC case with the project record, but ASRC access is not required for SRT
+membership or project handling.
 Releases, the project website, and the WeChat Official Account are outbound
 channels. [`COMMUNITY.md`](https://github.com/higress-group/community/blob/main/COMMUNITY.md)
 is the authoritative inventory of public, subproject, and narrowly scoped
@@ -209,9 +218,9 @@ OCI, Prometheus/OpenTelemetry conventions, and optional service registries.
 
 [`SECURITY.md`](https://github.com/higress-group/higress/blob/main/SECURITY.md)
 prohibits public vulnerability reports and
-requires reporters to submit the same substantive report through both GitHub
-Private Security Advisories and the Alibaba Security Response Center. The named
-Security Response Team is the current maintainer list.
+requires reporters to use GitHub Private Security Advisories as the
+authoritative project intake. Alibaba Security Response Center submission is
+optional. The named Security Response Team is the current maintainer list.
 For each case it assigns a triage coordinator, fix lead, independent reviewer
 and release lead, and disclosure lead, with at least two unconflicted members.
 The policy documents conflicts and escalation. Its targets are acknowledgement
@@ -229,7 +238,8 @@ Advisory and release information, and coordinate timing with the reporter.
 
 ### Known Gaps
 
-- Release SBOMs, signatures, and verifiable build provenance are absent.
+- Project-wide release SBOM, artifact-signature, and machine-readable
+  provenance-attestation coverage is incomplete.
 - The controller's ClusterRole is broad and its default container security
   context is empty. Gateway non-root defaults depend on Kubernetes/platform
   capability; legacy fallback adds `NET_BIND_SERVICE` and allows escalation.
@@ -238,9 +248,6 @@ Advisory and release information, and coordinate timing with the reporter.
 - This threat model is project-authored, has not been independently validated,
   and is not yet backed by a published data-flow diagram with explicit trust
   boundaries or an independent security audit.
-- Requiring every reporter to duplicate the report in the vendor-operated
-  Alibaba Security Response Center creates a vendor-neutrality concern that
-  requires CNCF review or a future neutral replacement plan.
 
 ### Known Issues Over Time
 

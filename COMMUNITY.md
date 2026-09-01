@@ -39,8 +39,8 @@ reporters or users:
 
 | Channel | Special purpose |
 | --- | --- |
-| [GitHub Private Security Advisories](https://github.com/higress-group/higress/security/advisories/new) | One of the two required confidential vulnerability-reporting channels; used for project triage, remediation, and disclosure coordination under the [Higress security policy](https://github.com/higress-group/higress/blob/main/SECURITY.md) |
-| [Alibaba Security Response Center](https://security.alibaba.com/) | The second required confidential vulnerability-reporting channel; the same substantive report must be submitted here and correlated with the GitHub advisory by the Security Response Team |
+| [GitHub Private Security Advisories](https://github.com/higress-group/higress/security/advisories/new) | Required, vendor-neutral, and authoritative vulnerability-reporting channel; used for project triage, remediation, and disclosure coordination under the [Higress security policy](https://github.com/higress-group/higress/blob/main/SECURITY.md) |
+| [Alibaba Security Response Center](https://security.alibaba.com/) | Optional additional channel, for example when a report also affects an Alibaba Cloud service; an SRT member with access may correlate the case with the project record |
 | [CNCF Code of Conduct reporting](mailto:conduct@cncf.io) | Confidential Code of Conduct incident reporting under [`CODE_OF_CONDUCT.md`](./CODE_OF_CONDUCT.md) |
 | [CNCF TOC private mailing list](mailto:cncf-private-toc@lists.cncf.io) | Confidential escalation when project leadership cannot resolve a security or governance conflict without conflicted participants |
 
