@@ -86,7 +86,8 @@ The following are non-blocking at Incubation but would improve long-term
 governance maturity:
 
 - Record governance evolution and link decisions to issues or pull requests.
-- Publish examples demonstrating the maintainer lifecycle in practice.
+- Continue linking future maintainer lifecycle events and outcomes from the
+  public history.
 - Add objective progression expectations for appointment to the code-owner
   role.
 - Extend `CODEOWNERS` or equivalent ownership records to each active
@@ -168,17 +169,23 @@ escalation.
 The project documents nomination, public activity review, voluntary departure,
 inactivity, removal, emeritus status, and return.
 
-**Lifecycle demonstrated — Incubating: Suggested — Not demonstrated.**
+**Lifecycle demonstrated (Incubating: Suggested): Satisfied for current
+project history.**
 
-The maintainer file has only one introducing commit in the available history.
-No public example of adding, replacing, or moving a maintainer to emeritus is
-linked.
+The maintainer lifecycle history links the pull request that established the
+public project-wide roster and the 2026 activity and affiliation review. The
+review retained all seven maintainers as active. No project event has required
+adding, replacing, removing, or moving a maintainer to emeritus since the
+documented lifecycle process was established. Future lifecycle events will be
+linked from the maintainer history when they occur.
 
 **Names, contact, responsibility, affiliation — Incubating: Required —
 Satisfied.**
 
 The roster provides names, GitHub contacts, project-wide responsibility
-domains, and affiliations for all maintainers.
+domains, and affiliations for all maintainers. It requires maintainers to
+update their affiliation within 30 days of an employment or organizational
+affiliation change.
 
 **Appropriate number of active maintainers — Incubating: Required —
 Satisfied.**

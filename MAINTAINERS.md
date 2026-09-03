@@ -36,6 +36,9 @@ reviewed in a public pull request at least annually. The review checks public
 activity, current affiliation and contact information, and asks maintainers
 whose status is unclear to confirm their availability.
 
+A maintainer must update their affiliation in this file within 30 days of an
+employment or organizational affiliation change.
+
 The 2026 roster review used public GitHub issue and pull-request activity for
 each maintainer:
 
@@ -46,6 +49,22 @@ each maintainer:
 - [Zhiwei Cheng](https://github.com/higress-group/higress/issues?q=updated%3A%3E%3D2025-07-21+involves%3Acr7258)
 - [Tianyi Zhang](https://github.com/higress-group/higress/issues?q=updated%3A%3E%3D2025-07-21+involves%3Ajohnlanni)
 - [Jingfeng Xu](https://github.com/higress-group/higress/issues?q=updated%3A%3E%3D2025-07-21+involves%3Alexburner)
+
+## Maintainer lifecycle history
+
+- On April 24, 2026,
+  [`higress#3754`](https://github.com/higress-group/higress/pull/3754)
+  established the first public project-wide maintainer roster from the
+  maintainers already reflected in code ownership and project governance.
+- On July 22, 2026,
+  [`higress#4177`](https://github.com/higress-group/higress/pull/4177)
+  documented the complete lifecycle process and the 2026 activity and
+  affiliation review. The review retained all seven maintainers as active.
+
+No project event has required adding, replacing, removing, or moving a
+maintainer to emeritus since the documented lifecycle process was established.
+Future lifecycle events and their outcomes will be recorded here with links to
+the public issue or pull request that applied the process.
 
 ## Becoming a maintainer
 

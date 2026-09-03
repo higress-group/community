@@ -115,8 +115,10 @@ include Ant Digital, Kuaishou, Trip.com, Vipshop, and Labring.
 - [x] Function-based team assignment, onboarding, removal, conflicts, and
   retirement are documented.
 - [x] The complete maintainer lifecycle is documented.
-- [ ] Demonstrate a completed maintainer lifecycle event. Suggested; no public
-  addition, replacement, or emeritus transition is yet linked.
+- [x] The public maintainer lifecycle history links the initial roster and the
+  2026 activity and affiliation review. All seven reviewed maintainers were
+  retained as active; no later project event has required a maintainer
+  addition, replacement, removal, or emeritus transition.
 - [x] Subproject scope, leadership model, contribution, status, and lifecycle
   are documented.
 
@@ -125,6 +127,8 @@ include Ant Digital, Kuaishou, Trip.com, Vipshop, and Labring.
 - [x] Current maintainers include names, GitHub contact, responsibility domain,
   and affiliation in
   [`MAINTAINERS.md`](https://github.com/higress-group/community/blob/main/MAINTAINERS.md).
+- [x] Maintainers must update their affiliation within 30 days of an employment
+  or organizational affiliation change.
 - [x] Seven active maintainers are appropriate to the primary repository and
   four subprojects; the annual activity review links public evidence for each.
 - [x] Code and documentation ownership matches the documented code-owner and
