@@ -150,6 +150,15 @@ reviewers an initial view of security boundaries, practices, and known gaps.
 - External service registries, Redis, certificate issuers, identity providers,
   OCI registries, and AI/model providers.
 
+### Who configures and enforces security controls
+
+The [operator guide](https://github.com/higress-group/community/blob/main/docs/security-operator-responsibilities.md)
+lists the actions required from the people running Higress. Kubernetes enforces
+their RBAC and container resource limits. Higress and Envoy apply the routes and
+request policies they configure. Operators must review custom resources, plugin
+settings, and image sources before deployment. Configuration validation does
+not establish that a policy is safe or that an image is trustworthy.
+
 ### Threat Model
 
 This project-authored model uses the actors, assets, flows, and boundaries above.
