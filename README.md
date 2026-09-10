@@ -20,6 +20,7 @@ specific contribution workflows remain in the
 | [Roadmap](./ROADMAP.md) | Project-wide roadmap and change process |
 | [Code of Conduct](./CODE_OF_CONDUCT.md) | The project-adopted CNCF-aligned Code of Conduct |
 | [CNCF materials](./docs/cncf/) | Incubation working copy and project review self-assessments |
+| [Security responsibilities](./docs/security-operator-responsibilities.md) | What Higress handles and what deployment operators need to configure |
 
 ## Contributing
 
