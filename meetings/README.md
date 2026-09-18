@@ -18,4 +18,5 @@ the relevant public issue or pull request.
 
 ## Meeting records
 
+- [September 17, 2026](./2026/2026-09-17.md)
 - [August 20, 2026](./2026/2026-08-20.md)
