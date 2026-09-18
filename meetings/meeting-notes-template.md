@@ -4,7 +4,6 @@
 - **Calendar:** [Recurring DingTalk calendar event](https://github.com/higress-group/community/blob/main/MEETINGS.md#schedule-and-joining)
 - **Meeting platform:** DingTalk
 - **Source notes:** Add the public source-notes link.
-- **Agenda issue:** Add the public agenda issue link.
 
 ## Meeting outline
 
