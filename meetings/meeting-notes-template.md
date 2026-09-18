@@ -1,8 +1,9 @@
 # Higress Community Meeting — YYYY-MM-DD
 
 - **Time:** 20:00–21:00 Asia/Shanghai (UTC+8)
-- **Calendar:** <https://zoom-lfx.platform.linuxfoundation.org/meetings/higress>
-- **Meeting page:** Add the occurrence-specific or recurring meeting link.
+- **Calendar:** [Recurring DingTalk calendar event](https://github.com/higress-group/community/blob/main/MEETINGS.md#schedule-and-joining)
+- **Meeting platform:** DingTalk
+- **Source notes:** Add the public source-notes link.
 - **Agenda issue:** Add the public agenda issue link.
 
 ## Agenda

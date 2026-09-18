@@ -153,8 +153,7 @@ include Ant Digital, Kuaishou, Trip.com, Vipshop, and Labring.
 - [x] The monthly Higress Community Meeting has a public schedule, joining
   information, agenda and meeting-record process in
   [`MEETINGS.md`](https://github.com/higress-group/community/blob/main/MEETINGS.md),
-  and a recurring entry on the
-  [LFX public calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/higress).
+  including a public recurring DingTalk calendar entry and QR code.
   Meeting notes are published in the
   [`meetings`](https://github.com/higress-group/community/tree/main/meetings)
   directory, beginning with the

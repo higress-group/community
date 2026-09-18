@@ -11,19 +11,19 @@ topics and future work.
 | Meeting | Higress Community Meeting |
 | Schedule | Monthly, on the third Thursday |
 | Time | 20:00 to 21:00 Asia/Shanghai (UTC+8) |
-| Upcoming meetings | [Higress meetings on the LFX platform](https://zoom-lfx.platform.linuxfoundation.org/meetings/higress) |
-| Join via Zoom | [Higress Community Meeting page](https://zoom-lfx.platform.linuxfoundation.org/meeting/94551670181?password=6b1f20d7-7b52-4a32-86fe-5a32de2ee879) |
-| DingTalk calendar | Scan the poster or QR code below with DingTalk to add the meeting to your calendar |
+| Platform | DingTalk |
+| DingTalk calendar | [Open the recurring Higress Community Meeting event](https://n.dingtalk.com/dingding/calendar/detail/index.html?dd_full_screen=true&dd_progress=false&dd_darkmode=true&dd_android_full=true&uniqueId=cklhN1hyM1VLYnVjYlg3ZG5yU3J5dz09&recurrenceId=1792065600000&corpId=dingd8e1123006514592&inviterId=RWlWYkUwK1ZUakZHclB0VlBHUHJpZz09) |
+| Next meeting | October 15, 2026, 20:00 to 21:00 Asia/Shanghai (UTC+8) |
 
-The meeting runs on Zoom and DingTalk at the same time. Join through whichever
-platform is more convenient for you.
+Higress community meetings are held on DingTalk. Open the calendar link above
+on a device with DingTalk installed, or scan the QR code in the poster below,
+to add the recurring meeting and receive future updates.
 
-![DingTalk calendar for the September 17, 2026 meeting](./images/higress-community-meeting-2026-09-17.jpg)
+![DingTalk calendar for the October 15, 2026 meeting](./images/higress-community-meeting-2026-10-15.png)
 
-This is a recurring monthly meeting. The LFX calendar lists upcoming dates and
-any schedule changes. Select a meeting on the calendar to join via Zoom. No
-project invitation is required, and participants may join up to 10 minutes
-before the scheduled start.
+This is a recurring monthly DingTalk event with no scheduled end date. Any
+schedule changes are reflected in the DingTalk calendar and announced in the
+corresponding public agenda issue.
 
 The DingTalk poster is updated for each meeting and is also posted in the
 corresponding agenda issue before the meeting.
@@ -53,11 +53,10 @@ attendance is not required to participate in project decisions.
 
 ## Recordings and notes
 
-The LFX meeting is configured for recording and transcription. After LFX has
-processed a meeting, the public recording and transcript are linked from the
-calendar event, final meeting record, and agenda issue. The
-[`meetings`](./meetings/README.md) directory is the durable archive for notes,
-decisions, action items, and related project discussions.
+The [`meetings`](./meetings/README.md) directory is the durable public archive
+for notes, decisions, action items, and related project discussions. When a
+public recording or transcript is available, it is linked from the final
+meeting record and agenda issue.
 
 All participants must follow the project
 [Code of Conduct](./CODE_OF_CONDUCT.md). Confidential security reports and
