@@ -270,8 +270,9 @@ project decision channels and requires public decision records.
 
 `COMMUNITY.md` and `MEETINGS.md` publish the monthly schedule, public joining
 information, agenda and meeting-record process, and a public recurring DingTalk
-calendar entry. The recurring series starts on 2026-08-20 and has no scheduled
-end date.
+calendar entry. Meetings through August 2026 used LFX Zoom. To make it easier
+for developers to join, meetings from September 2026 onward use the public
+recurring DingTalk event, which has no scheduled end date.
 
 **Contribution documentation — Incubating: Required — Satisfied.**
 
