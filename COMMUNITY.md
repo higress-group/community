@@ -13,6 +13,7 @@ discussions, pull requests, or published meeting notes.
 | [GitHub Pull Requests](https://github.com/higress-group/higress/pulls) | Public change proposals, reviews, and decision records |
 | [GitHub Discussions](https://github.com/higress-group/higress/discussions) | User questions, ideas, announcements, and longer-form community discussion |
 | [Higress Community Meeting](./MEETINGS.md) | Monthly public project updates, technical discussions, roadmap planning, and community questions; schedule and joining details are published with the recurring DingTalk calendar event in `MEETINGS.md` |
+| [Higress Community Knowledge Base](https://alidocs.dingtalk.com/i/spaces/nb9XJaDBvk5vDzyA/overview) | Public product, usage, and community materials, including source documents for community meetings; technical and governance decisions remain authoritative in the relevant public GitHub record |
 | [Discord](https://discord.gg/tSbww9VDaM) | Public real-time user and contributor chat; decisions arising there must be recorded on GitHub |
 | [Chinese-language community group](https://github.com/higress-group/higress/blob/main/README_ZH.md#%E4%BA%A4%E6%B5%81%E7%BE%A4) | Publicly advertised Chinese-language user and contributor chat |
 | [Higress WeChat Official Account](https://github.com/higress-group/higress/blob/main/README_ZH.md#%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB) | Chinese-language technical articles and project announcements; broadcast rather than a decision channel |
