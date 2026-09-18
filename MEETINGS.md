@@ -19,6 +19,11 @@ Higress community meetings are held on DingTalk. Open the calendar link above
 on a device with DingTalk installed, or scan the QR code in the poster below,
 to add the recurring meeting and receive future updates.
 
+Meetings through August 2026 used LFX Zoom. To make it easier for developers
+to join, Higress moved its community meetings to DingTalk starting in September
+2026. Historical meeting records retain the platform and joining links used at
+the time.
+
 ![DingTalk calendar for the October 15, 2026 meeting](./images/higress-community-meeting-2026-10-15.png)
 
 This is a recurring monthly DingTalk event with no scheduled end date. Any
