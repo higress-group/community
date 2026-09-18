@@ -44,7 +44,9 @@ Each agenda issue records:
 
 After each meeting, maintainers publish the final record under
 [`meetings/YYYY/YYYY-MM-DD.md`](./meetings/README.md) and link it from the
-agenda issue.
+agenda issue. The final record keeps the original outline as a source link and
+separately records the meeting minutes, conclusions, decisions, and action
+items.
 
 Participants who cannot attend may comment on the agenda issue before or after
 the meeting. Significant technical or governance decisions are finalized and

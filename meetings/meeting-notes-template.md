@@ -6,15 +6,16 @@
 - **Source notes:** Add the public source-notes link.
 - **Agenda issue:** Add the public agenda issue link.
 
-## Agenda
+## Meeting outline
 
-| Topic | Proposer | Related links |
-| --- | --- | --- |
-| | | |
+Link the original public outline or meeting-material document. Do not duplicate
+or reinterpret the outline in this record.
 
-## Notes
+## Meeting minutes and conclusions
 
-Add a concise, factual summary of each discussion.
+Add the published meeting summary and any summary graphic. Record discussion
+context, material viewpoints, conclusions, and unresolved questions separately
+from the source outline.
 
 ## Decisions
 
