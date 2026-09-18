@@ -37,8 +37,8 @@ people affiliated with four organizations.
 
 The documentation and public evidence satisfy all Incubation-required
 Governance Review criteria. Higress publishes a recurring community meeting,
-public joining information, agenda and meeting-record process, and an LFX
-public meeting scheduler.
+public joining information, a recurring DingTalk calendar entry, and an agenda
+and meeting-record process.
 
 ### Executing the Assessment
 
@@ -269,9 +269,10 @@ project decision channels and requires public decision records.
 **Public meeting scheduler/CNCF calendar — Incubating: Required — Satisfied.**
 
 `COMMUNITY.md` and `MEETINGS.md` publish the monthly schedule, public joining
-information, agenda and meeting-record process, and the
-[LFX public calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/higress).
-The recurring series starts on 2026-08-20 and is open without an invitation.
+information, agenda and meeting-record process, and a public recurring DingTalk
+calendar entry. Meetings through August 2026 used LFX Zoom. To make it easier
+for developers to join, meetings from September 2026 onward use the public
+recurring DingTalk event, which has no scheduled end date.
 
 **Contribution documentation — Incubating: Required — Satisfied.**
 
