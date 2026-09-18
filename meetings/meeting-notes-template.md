@@ -23,8 +23,3 @@ from the source outline.
 ## Action items
 
 - [ ] Action — owner: @github-handle
-
-## Recording and transcript
-
-- **Recording:** Pending
-- **Transcript:** Pending

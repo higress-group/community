@@ -11,7 +11,7 @@ Meeting records are organized as `YYYY/YYYY-MM-DD.md` and contain:
 - meeting minutes, material viewpoints, conclusions, and related public issues
   or pull requests;
 - action items with owners and status; and
-- recording and transcript links after processing.
+- recording and transcript links when they are publicly available.
 
 Use [`meeting-notes-template.md`](./meeting-notes-template.md) when adding a
 record. Significant technical or governance decisions must also be recorded in
