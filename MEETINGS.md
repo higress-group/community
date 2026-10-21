@@ -13,7 +13,7 @@ topics and future work.
 | Time | 20:00 to 21:00 Asia/Shanghai (UTC+8) |
 | Platform | DingTalk |
 | DingTalk calendar | [Open the recurring Higress Community Meeting event](https://n.dingtalk.com/dingding/calendar/detail/index.html?dd_full_screen=true&dd_progress=false&dd_darkmode=true&dd_android_full=true&uniqueId=cklhN1hyM1VLYnVjYlg3ZG5yU3J5dz09&recurrenceId=1792065600000&corpId=dingd8e1123006514592&inviterId=RWlWYkUwK1ZUakZHclB0VlBHUHJpZz09) |
-| Next meeting | October 15, 2026, 20:00 to 21:00 Asia/Shanghai (UTC+8) |
+| Next meeting | October 22, 2026, 20:00 to 21:00 Asia/Shanghai (UTC+8) |
 
 Higress community meetings are held on DingTalk. Open the calendar link above
 on a device with DingTalk installed, or scan the QR code in the poster below,
@@ -24,7 +24,7 @@ to join, Higress moved its community meetings to DingTalk starting in September
 2026. Historical meeting records retain the platform and joining links used at
 the time.
 
-![DingTalk calendar for the October 15, 2026 meeting](./images/higress-community-meeting-2026-10-15.png)
+![DingTalk calendar for the October 22, 2026 meeting](./images/higress-community-meeting-2026-10-15.png)
 
 This is a recurring monthly DingTalk event with no scheduled end date. Any
 schedule changes are reflected in the DingTalk calendar and announced in the
